@@ -6,6 +6,7 @@
     "version": "4.2.0"
   },
   "scripts": {
+    "dev": "hexo server",
     "build": "hexo generate",
     "eslint": "eslint ."
   },

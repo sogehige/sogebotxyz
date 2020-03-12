@@ -1,0 +1,27 @@
+title: sogeBot
+subtitle: "Free Twitch Bot built on Node.js"
+description: "sogeBot is free Twitch Bot built on Node.js"
+author: sogeBot
+language: en
+timezone: UTC
+
+url: https://sogebot.xyz
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+per_page: 0
+pretty_urls:
+  trailing_index: false
+  trailing_html: false
+
+theme: navy
+
+highlight:
+  enable: true
+  line_number: false
+
+github: sogehige/sogebot
+twitter: sogehige

@@ -1,0 +1,16 @@
+menu:
+  docs: Docs
+  community: Community
+  news: News
+  about: About
+  download: Download
+
+index:
+  get_started: Get started
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"

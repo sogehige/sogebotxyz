@@ -7,5 +7,5 @@
 <!-- Paypal -->
 <a href="https://www.paypal.me/sogetwitch/5eur" target="_blank"><img src="https://img.shields.io/badge/paypal-donate-yellow.svg?style=for-the-badge&logo=paypal"/></a>
 <!-- Patreon -->
-<a href="https://www.patreon.com/soge" target="_blank"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fsoge__&style=for-the-badge"/></a>
+<a href="https://www.patreon.com/soge__" target="_blank"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fsoge__&style=for-the-badge"/></a>
 

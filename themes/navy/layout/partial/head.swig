@@ -4,8 +4,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:image" content="{{ url_for('images/sogebot_large.png') }}">
-  <meta property="twitter:image" content="{{ url_for('images/sogebot_large.png') }}">
+  <meta property="og:image" content="{{ url_for('images/sogebot_large.png', {relative: false}) }}">
+  <meta property="twitter:image" content="{{ url_for('images/sogebot_large.png', {relative: false}) }}">
 
   <!-- Canonical links -->
   <link rel="canonical" href="{{ url }}">

@@ -89,7 +89,7 @@
   line-height: 1.2;
   color: #fff
 
-#intro-feature-list
+.intro-feature-list
   padding-top: 20px
   display: flex
   flex-flow: column
@@ -99,11 +99,11 @@
 .intro-feature-wrap
   padding-top: 20px
   @media mq-tablet
-    flex: 0 0 50%
-    padding-top: 50px
+    flex: 0 0 33%
+    padding-top: 35px
   @media mq-normal
-    flex: 0 0 50%
-    padding-top: 50px
+    flex: 0 0 33%
+    padding-top: 35px
 
 .intro-feature
   position: relative
@@ -129,9 +129,10 @@
   font-family: font-title
   font-size: 24px
 
-.intro-feature-desc
-  margin: line-height 0
-  line-height: line-height
+.intro-feature
+  .intro-feature-desc
+    margin: line-height 0
+    line-height: line-height
 
 #intro-cmd-wrap
   max-width: 700px
@@ -231,3 +232,9 @@
     font-size: 18px
   @media mq-normal
     font-size: 20px
+
+div.integrations
+  text-align: center
+  a
+    img
+      padding: 10px

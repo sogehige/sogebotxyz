@@ -7,6 +7,7 @@
     <div id="footer-links">
       <a href="https://twitter.com/{{ config.twitter }}" class="footer-link" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://github.com/{{ config.github }}" class="footer-link" target="_blank"><i class="fab fa-github-alt"></i></a>
+      <a href="https://discordapp.com/invite/52KpmuH" class="footer-link" target="_blank"><i class="fab fa-discord"></i></a>
     </div>
   </div>
 </footer>

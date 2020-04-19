@@ -8,7 +8,7 @@
 
 <script type="text/javascript">
   const code = new URLSearchParams(window.location.search).get('code');
-  const request = new Request('https://sogebot.xyz/.netlify/functions/streamlabs?code='+code);
+  const request = new Request('https://www.sogebot.xyz/.netlify/functions/streamlabs?code='+code);
   fetch(request)
     .then(response => {
       document.getElementById('code').innerText = response.body;

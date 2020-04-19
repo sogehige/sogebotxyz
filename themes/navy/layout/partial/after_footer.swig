@@ -2,7 +2,6 @@
 <!-- Cookie -->
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <!-- build:js build/js/main.js -->
-{{ js('js/lang_select') }}
 {{ js('js/toc') }}
 {{ js('js/mobile_nav') }}
 <!-- endbuild -->

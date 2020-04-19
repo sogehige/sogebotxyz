@@ -7,5 +7,15 @@
 </p>
 
 <script type="text/javascript">
-  document.getElementById('code').innerText = new URLSearchParams(window.location.search).get('code');
+  const code = new URLSearchParams(window.location.search).get('code');
+  const request = new Request('http://sogebot.xyz/.netlify/functions/streamlabs?code='+code);
+  fetch(request)
+    .then(response => {
+      document.getElementById('code').innerText = response.body;
+    })
+    .then(response => {
+      console.debug(response);
+    }).catch(error => {
+      console.error(error);
+    });
 </script>

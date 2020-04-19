@@ -11,9 +11,10 @@
   const request = new Request('https://www.sogebot.xyz/.netlify/functions/streamlabs?code='+code);
   fetch(request)
     .then(response => {
-      document.getElementById('code').innerText = response.body;
+      return response.text();
     })
     .then(response => {
+      document.getElementById('code').innerText = response;
       console.debug(response);
     }).catch(error => {
       console.error(error);

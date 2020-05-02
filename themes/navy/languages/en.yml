@@ -5,6 +5,7 @@ menu:
   news: News
   about: About
   download: Download
+  translations: Translations
 
 index:
   get_started: Get started

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "scripts": {
     "dev": "hexo server",
@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "cheerio": "^0.22.0",
-    "hexo": "github:hexojs/hexo",
+    "hexo": "4.2.1",
     "hexo-clean-css": "^1.0.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-fontawesome": "^2.1.0",

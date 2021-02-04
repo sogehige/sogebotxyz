@@ -16,7 +16,12 @@ ul.intro-feature-list
       .intro-feature-icon
         {% fa_inline question-circle fas %}
       h3.intro-feature-title Quick support
-      p.intro-feature-desc Do you need help? Ask your questions on discord, community forum and get your answers quick! Do you need bot change? Feel free to ask for new features!
+      p.intro-feature-desc
+        | Do you need help? Ask your questions on&nbsp;
+        a(href="https://discordapp.com/invite/52KpmuH" target="_blank") discord
+        |,&nbsp;
+        a(href="https://community.sogebot.xyz/" target="_blank") community forum
+        |&nbsp;and get your answers quick! Do you need bot change? Feel free to ask for new features!
   li.intro-feature-wrap
     .intro-feature
       .intro-feature-icon
@@ -26,6 +31,8 @@ ul.intro-feature-list
         p Features several integrations. Share your stream status on Twitter. Get donation data from Streamlabs, StreamElements and more!
 
 div.integrations
+  a(href="https://obsproject.com/" target="_blank")
+    img(src="/images/logo/obs.png" height=50)
   a(href="https://www.donationalerts.com/" target="_blank")
     img(src="/images/logo/donationalerts.png" height=50)
   a(href="https://www.qiwi.com/" target="_blank")
@@ -48,6 +55,16 @@ div.integrations
     img(src="/images/logo/pubg.png" height=50)
 
 ul.intro-feature-list
+  li.intro-feature-wrap
+    .intro-feature
+      .intro-feature-icon
+        {% fa_inline chromecast fab %}
+      h3.intro-feature-title OBS Websocket
+      p.intro-feature-desc Control your stream through sogeBot! Use predefined actions or use advanced mode and leverage amazing&nbsp;
+        a(href="https://github.com/Palakis/obs-websocket" target="_blank") obs-websocket
+        | &nbsp;through&nbsp;
+        a(href="https://github.com/haganbmj/obs-websocket-js" target="_blank") obs-websocket-js
+        | &nbsp;library.
   li.intro-feature-wrap
     .intro-feature
       .intro-feature-icon

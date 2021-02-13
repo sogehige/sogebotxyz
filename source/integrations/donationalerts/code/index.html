@@ -14,7 +14,7 @@
       return response.text();
     })
     .then(response => {
-      document.getElementById('code').value = response;
+      document.getElementById('code').innerText = response;
       console.debug(response);
     }).catch(error => {
       console.error(error);

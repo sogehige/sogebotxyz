@@ -11,10 +11,10 @@
   const request = new Request('https://www.sogebot.xyz/.netlify/functions/donationalerts?code='+code);
   fetch(request)
     .then(response => {
-      return response.text();
+      return response.json();
     })
     .then(response => {
-      document.getElementById('code').innerText = response;
+      document.getElementById('code').innerText = response.access_token;
       console.debug(response);
     }).catch(error => {
       console.error(error);

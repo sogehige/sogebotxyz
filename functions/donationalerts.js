@@ -25,7 +25,7 @@ exports.handler = async function(event, context, callback) {
 
     callback(null, {
       statusCode: 200,
-      body: data.access_token
+      body: data
     });
   } catch (e) {
     callback(null, {

@@ -1,10 +1,12 @@
 <h2>Donationalerts access token</h2>
 
-<p>You have authorized sogeBot to access donation information. You now need to take the following code and put it into your <strong>settings->integrations->donationalerts->access token</strong></p>
+<p>You have authorized sogeBot to access donation information. You now need to take the following code and put it into your <strong>settings->modules->integrations->donationalerts</strong></p>
 
-<p style="text-align:center; font-size: 1.2vw; overflow-wrap: anywhere;">
-  <code id="code"></code>
-</p>
+<label for="accesstoken">Access Token</label>
+<input type="text" id="accesstoken"/>
+<hr/>
+<label for="refreshtoken">Refresh Token</label>
+<input type="text" id="refreshtoken"/>
 
 <script type="text/javascript">
   const code = new URLSearchParams(window.location.search).get('code');
@@ -14,7 +16,8 @@
       return response.json();
     })
     .then(response => {
-      document.getElementById('code').innerText = response.access_token;
+      document.getElementById('accesstoken').value = response.access_token;
+      document.getElementById('refreshtoken').value = response.refresh_token;
       console.debug(response);
     }).catch(error => {
       console.error(error);

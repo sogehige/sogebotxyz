@@ -3,10 +3,10 @@
 <p>You have authorized sogeBot to access donation information. You now need to take the following code and put it into your <strong>settings->modules->integrations->donationalerts</strong></p>
 
 <label for="accesstoken">Access Token</label>
-<input type="text" id="accesstoken"/>
+<textarea id="accesstoken"></textarea>
 <hr/>
 <label for="refreshtoken">Refresh Token</label>
-<input type="text" id="refreshtoken"/>
+<textarea id="refreshtoken"></textarea>
 
 <script type="text/javascript">
   const code = new URLSearchParams(window.location.search).get('code');

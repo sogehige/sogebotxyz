@@ -58,6 +58,7 @@ exports.handler = async function(event, context, callback) {
         statusCode: 200,
       });
     } catch (e) {
+      console.log(e.stack);
       callback(null, {
         statusCode: 500,
       });

@@ -25,6 +25,7 @@ exports.handler = async function(event, context, callback) {
         redirect_uri: 'http://sogebot.xyz/integrations/donationalerts/code/',
         code
       });
+      console.log({event, context, callback})
       console.log('Code sent OK')
       callback(null, {
         statusCode: 200,

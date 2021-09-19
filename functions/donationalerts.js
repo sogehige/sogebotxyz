@@ -32,6 +32,7 @@ exports.handler = async function(event, context, callback) {
       });
     } catch (e) {
 
+
       console.log('Invalid code')
       callback(null, {
         statusCode: 400,
@@ -59,13 +60,14 @@ exports.handler = async function(event, context, callback) {
         refresh_token: refreshToken,
         scope: 'oauth-user-show oauth-donation-subscribe oauth-donation-index',
       });
-      console.log('New tokens sent OK')l
+      console.log('New tokens sent OK');
       callback(null, {
         body: JSON.stringify(data),
         statusCode: 200,
       });
     } catch (e) {
       console.log(e.stack);
+      console.log({event, context, callback})
       callback(null, {
         statusCode: 500,
       });

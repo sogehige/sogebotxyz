@@ -9,6 +9,7 @@ exports.handler = async function(event, context, callback) {
 
   if (event.httpMethod === 'GET') {
     if (!code) {
+      console.log('Error: missing code')
       callback(null, {
         statusCode: 400,
         body: 'Missing code'
@@ -16,6 +17,7 @@ exports.handler = async function(event, context, callback) {
     }
 
     try {
+      console.log('Code generation started.');
       const { data } = await axios.post('https://www.donationalerts.com/oauth/token', {
         grant_type: 'authorization_code',
         client_id: clientId,
@@ -23,12 +25,14 @@ exports.handler = async function(event, context, callback) {
         redirect_uri: 'http://sogebot.xyz/integrations/donationalerts/code/',
         code
       });
-
+      console.log('Code sent OK')
       callback(null, {
         statusCode: 200,
         body: JSON.stringify(data)
       });
     } catch (e) {
+
+      console.log('Invalid code')
       callback(null, {
         statusCode: 400,
         body: 'Invalid code'
@@ -37,8 +41,10 @@ exports.handler = async function(event, context, callback) {
   } else {
     // POST
     const refreshToken = JSON.parse(event.body).refreshToken;
+    console.log('Refreshing of token started.');
 
     if (!refreshToken) {
+      console.log('Error: missing refresh token')
       callback(null, {
         statusCode: 400,
         body: 'Missing refreshToken'
@@ -53,6 +59,7 @@ exports.handler = async function(event, context, callback) {
         refresh_token: refreshToken,
         scope: 'oauth-user-show oauth-donation-subscribe oauth-donation-index',
       });
+      console.log('New tokens sent OK')l
       callback(null, {
         body: JSON.stringify(data),
         statusCode: 200,
